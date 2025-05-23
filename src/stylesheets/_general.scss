@@ -1,8 +1,27 @@
-@use './design';
+@use './design' as *;
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @include text-preset-4;
+    color: $color-add-1;
+    background-color: $color-primary;
+}
+
+h2 {
+    @include text-preset-1;
+    color: $color-secondary;
+}
+
+h3 {
+    @include text-preset-3;
+    color: $color-1;
+}
+
+h4 {
+    @include text-preset-4;
+    color: $color-secondary;
 }
