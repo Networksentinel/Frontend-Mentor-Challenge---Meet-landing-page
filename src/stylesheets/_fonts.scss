@@ -35,3 +35,59 @@ $letter-spacing-lg: 4px;
     line-height:    $height;
     letter-spacing: $spacing;
 }
+
+@mixin text-preset-2(
+    $family:    $font-primary,
+    $weight:    $weight-black,
+    $size:      $font-size-lg,
+    $height:    $line-height-sm,
+    $spacing:   $letter-spacing-def
+    ) {
+    font-family:    $family;
+    font-weight:    $weight;
+    font-size:      $size;
+    line-height:    $height;
+    letter-spacing: $spacing;
+}
+
+@mixin text-preset-3(
+    $family:    $font-primary,
+    $weight:    $weight-black,
+    $size:      $font-size-sm,
+    $height:    $line-height-sm,
+    $spacing:   $letter-spacing-lg
+    ) {
+    font-family:    $family;
+    font-weight:    $weight;
+    font-size:      $size;
+    line-height:    $height;
+    letter-spacing: $spacing;
+}
+
+@mixin text-preset-4(
+    $family:    $font-primary,
+    $weight:    $weight-medium,
+    $size:      $font-size-md,
+    $height:    $line-height-sm,
+    $spacing:   $letter-spacing-def
+    ) {
+    font-family:    $family;
+    font-weight:    $weight;
+    font-size:      $size;
+    line-height:    $height;
+    letter-spacing: $spacing;
+}
+
+@mixin text-preset-5(
+    $family:    $font-primary,
+    $weight:    $weight-black,
+    $size:      $font-size-sm,
+    $height:    $line-height-lg,
+    $spacing:   $letter-spacing-def
+    ) {
+    font-family:    $family;
+    font-weight:    $weight;
+    font-size:      $size;
+    line-height:    $height;
+    letter-spacing: $spacing;
+}
