@@ -11,6 +11,13 @@
     justify-content: space-between;
     gap: $spacing-600;
 
+    &__header {
+        img {
+            width: 433px;
+            height: 160px
+        }
+    }
+
     &__content {
 
         &--heading {
