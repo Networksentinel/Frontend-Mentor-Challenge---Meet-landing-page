@@ -1,2 +1,22 @@
-@use './design';
+@use './design' as *;
 
+.main-footer {
+
+    &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $spacing-300;
+
+    width: 375px;
+    height: 375px;
+
+    background: url(/images/mobile/image-footer.jpg);
+    background-size: cover;
+    }
+    
+    &__heading {
+    @include text-preset-2;
+    color: $color-secondary;
+    }
+}

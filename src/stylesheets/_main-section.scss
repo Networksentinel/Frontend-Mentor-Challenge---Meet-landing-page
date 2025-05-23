@@ -1,2 +1,14 @@
-@use './design';
+@use './design' as *;
 
+.main-section {
+
+    &__heading--small{
+    @include text-preset-3;
+    color: $color-1;
+    }
+    
+    &__heading--big {
+    @include text-preset-2;
+    color: $color-secondary;
+    }
+}

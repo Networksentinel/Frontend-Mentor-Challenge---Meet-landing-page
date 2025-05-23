@@ -1,40 +1,16 @@
 @use './design' as *;
 
 body {
+    min-height: 100vh;
+    min-width: clamp(320px, 100vw, 1440px);
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
 
     @include text-preset-4;
     color: $color-add-1;
     background-color: $color-primary;
-}
-
-h2 {
-    @include text-preset-1;
-    color: $color-secondary;
-}
-
-h3 {
-    @include text-preset-3;
-    color: $color-1;
-}
-
-h4 {
-    @include text-preset-2;
-    color: $color-secondary;
-}
-
-.main-footer__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: $spacing-300;
-
-    width: 375px;
-    height: 375px;
-
-    background: url(/images/mobile/image-footer.jpg);
-    background-size: cover;
 }

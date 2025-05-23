@@ -1,2 +1,6 @@
-@use './design';
+@use './design' as *;
 
+.hero__heading {
+    @include text-preset-1;
+    color: $color-secondary;
+}
