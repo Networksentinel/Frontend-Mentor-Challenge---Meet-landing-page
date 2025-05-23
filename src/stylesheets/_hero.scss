@@ -1,10 +1,7 @@
 @use './design' as *;
 
 .hero {
-    padding-top: $spacing-800;
-    padding-bottom: $spacing-400;
-    padding-left: $spacing-400;
-    padding-right: $spacing-400;
+    overflow-x: hidden;
 
     display: flex;
     flex-direction: column;
@@ -12,10 +9,11 @@
     gap: $spacing-600;
 
     &__header {
-        img {
-            width: 433px;
-            height: 160px
-        }
+        position: relative;
+        width: calc(100% + 2rem);
+        height: clamp(160px, 39.453125vw, 488px);
+        margin-inline: -1rem;
+        background: url(/images/tablet/image-hero.png) center/cover no-repeat;
     }
 
     &__content {
