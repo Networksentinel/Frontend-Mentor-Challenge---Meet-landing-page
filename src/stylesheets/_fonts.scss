@@ -20,3 +20,18 @@ $line-height-sm: 1.1; //110%
 //LETTER-SPACING
 $letter-spacing-def: 0;
 $letter-spacing-lg: 4px;
+
+//-----------MIXINS
+@mixin text-preset-1(
+    $family:    $font-primary,
+    $weight:    $weight-black,
+    $size:      $font-size-xl,
+    $height:    $line-height-sm,
+    $spacing:   $letter-spacing-def
+    ) {
+    font-family:    $family;
+    font-weight:    $weight;
+    font-size:      $size;
+    line-height:    $height;
+    letter-spacing: $spacing;
+}
