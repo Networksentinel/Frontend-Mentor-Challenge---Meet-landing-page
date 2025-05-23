@@ -1,2 +1,18 @@
 @use './design' as *;
 
+.button-default {
+    all: unset;
+    width: fit-content;
+
+    @include text-preset-5;
+
+    background-color: $color-add-1;
+    color: $color-primary;
+
+    border-radius: 29px;
+    padding: $spacing-200 $spacing-500;
+    cursor: pointer;
+
+    display: flex;
+    gap: $spacing-50;
+}
