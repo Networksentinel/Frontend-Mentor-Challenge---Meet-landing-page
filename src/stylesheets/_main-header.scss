@@ -7,4 +7,22 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    &__logo {
+        width: 118px;
+        height: 28px;
+        background: url(/images/logo.svg) center center no-repeat;
+
+        &--sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        }
+    }
 }
