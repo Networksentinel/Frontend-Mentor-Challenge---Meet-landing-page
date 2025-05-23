@@ -12,9 +12,9 @@
 
     &__header {
         position: relative;
-        width: calc(100% + 2rem);
-        height: clamp(160px, 39.453125vw, 488px);
-        margin-inline: -1rem;
+        width: calc(100% + (2 * #{$spacing-400}));
+        margin-left: calc(-1 * #{$spacing-400});
+        height: clamp(160px, 39.453125vw, 488px);   
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
     }
 
