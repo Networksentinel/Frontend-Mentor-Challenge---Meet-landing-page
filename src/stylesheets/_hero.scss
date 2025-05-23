@@ -1,6 +1,21 @@
 @use './design' as *;
 
-.hero__heading {
-    @include text-preset-1;
-    color: $color-secondary;
+.hero {
+    padding-top: $spacing-800;
+    padding-bottom: $spacing-400;
+    padding-left: $spacing-400;
+    padding-right: $spacing-400;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $spacing-600;
+
+    &__content {
+
+        &--heading {
+        @include text-preset-1;
+        color: $color-secondary;
+        }
+    }
 }
