@@ -10,10 +10,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: clamp($spacing-600, 7.2916vw + 1rem, 127px);
+    gap: clamp($spacing-600, 7.2916vw + 1rem, 75px);
 
     @media (min-width: $breakpoint-tablet) {
-        padding-bottom: $spacing-800
+        padding-bottom: $spacing-800;
     }
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
@@ -41,8 +41,8 @@
 
     &__header {
         width: 100%;
-        max-width: 1000px;
-        height: clamp(160px, 39.453125vw, 488px);   
+        max-width: 800px;
+        height: clamp(160px, 39.453125vw, 375.63px);   
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
 
         @media (min-width: $breakpoint-mid) {
