@@ -18,6 +18,7 @@
     }
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
+        justify-content: center;
         gap: clamp(127.85px, 8.878472vw, 138px);
     }
 
@@ -28,6 +29,7 @@
             @media (min-width: $breakpoint-desktop) {
                 display: block;
                 margin-top: -1.5972vw;
+                margin-left: -1.6972vw;
             }
         }
         &--right{
@@ -36,6 +38,7 @@
             @media (min-width: $breakpoint-desktop) {
                 display: block;
                 margin-bottom: -1.5972vw;
+                margin-right: -1.6972vw;
             }
         }
     }
