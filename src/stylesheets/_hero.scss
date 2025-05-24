@@ -26,6 +26,7 @@
             
             @media (min-width: $breakpoint-desktop) {
                 display: block;
+                margin-top: -1.5972vw;
             }
         }
         &--right{
@@ -33,6 +34,7 @@
 
             @media (min-width: $breakpoint-desktop) {
                 display: block;
+                margin-bottom: -1.5972vw;
             }
         }
     }
