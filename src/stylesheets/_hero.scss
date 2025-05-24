@@ -37,11 +37,14 @@
     }
 
     &__header {
-        position: relative;
         width: 100%;
+        max-width: 1000px;
         height: clamp(160px, 39.453125vw, 488px);   
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
 
+        @media (min-width: $breakpoint-mid) {
+            background-size: contain;
+        }
         @media (min-width: $breakpoint-desktop) {
             display: none;
         }
