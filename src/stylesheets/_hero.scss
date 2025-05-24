@@ -13,8 +13,8 @@
     gap: clamp($spacing-600, 7.2916vw + 1rem, 88px);
 
     @media (min-width: $breakpoint-tablet) {
-            padding-bottom: $spacing-800
-        }
+        padding-bottom: $spacing-800
+    }
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
     }
@@ -24,14 +24,14 @@
             display: none;
             
             @media (min-width: $breakpoint-desktop) {
-            display: block;
+                display: block;
             }
         }
         &--right{
             display: none;
 
             @media (min-width: $breakpoint-desktop) {
-            display: block;
+                display: block;
             }
         }
     }
