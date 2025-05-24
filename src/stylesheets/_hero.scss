@@ -56,7 +56,7 @@
 
         display: flex;
         flex-direction: column;
-        gap: $spacing-300;
+        gap: clamp($spacing-300, 3.125vw, $spacing-400);
     }
 
     &__heading {
