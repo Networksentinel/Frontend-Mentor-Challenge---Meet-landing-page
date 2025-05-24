@@ -3,6 +3,7 @@
 
 .hero {
     overflow-x: hidden;
+    width: 100%;
 
     padding: $spacing-800 0 $spacing-400;
 
@@ -41,7 +42,8 @@
 
     &__header {
         width: clamp(433px, 100%, 800px); 
-        height: clamp(160px, 39.453125vw, 375.63px);   
+        height: clamp(160px, 39.453125vw, 375.63px);  
+
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
 
         @media (min-width: $breakpoint-mid) {
