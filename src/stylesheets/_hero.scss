@@ -17,10 +17,14 @@
         width: calc(100% + (2 * #{$spacing-400}));
         height: clamp(160px, 39.453125vw, 488px);   
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
+
+        @media (min-width: $breakpoint-desktop) {
+            display: none;
+        }
     }
 
     &__content {
-        width: clamp(305px, 58.4635416vw, 1120px);
+        width: clamp(305px, 58.37239583vw, 448.3px);
 
         display: flex;
         flex-direction: column;
