@@ -12,6 +12,10 @@
     align-items: center;
     gap: clamp($spacing-600, 7.2916vw + 1rem, 88px);
 
+    @media (min-width: $breakpoint-tablet) {
+            padding-bottom: $spacing-800
+        }
+
     &__header {
         position: relative;
         width: calc(100% + (2 * #{$spacing-400}));
