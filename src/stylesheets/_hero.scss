@@ -9,17 +9,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: $spacing-600;
 
     &__header {
         position: relative;
         width: calc(100% + (2 * #{$spacing-400}));
-        margin-left: calc(-1 * #{$spacing-400});
         height: clamp(160px, 39.453125vw, 488px);   
         background: url(/images/tablet/image-hero.png) center/cover no-repeat;
     }
 
     &__content {
+        width: clamp(305px, 58.4635416vw, 1120px);
+
         display: flex;
         flex-direction: column;
         gap: $spacing-300;
@@ -45,6 +47,14 @@
             &:hover,
             &:focus {
                 background-color: $color-1-hover;
+            }
+        }
+        &--small {
+            background-color: $color-2;
+            transition: all 0.4s ease-in-out;
+            &:hover,
+            &:focus {
+                background-color: $color-2-hover;
             }
         }
     }
