@@ -38,6 +38,11 @@
         align-items: center;
         gap: $spacing-200;
 
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row;
+            justify-content: center;
+        }
+
         &--big {
             background-color: $color-1;
             transition: all 0.4s ease-in-out;
