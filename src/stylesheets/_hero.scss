@@ -15,6 +15,26 @@
     @media (min-width: $breakpoint-tablet) {
             padding-bottom: $spacing-800
         }
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+    }
+
+    &__img {
+        &--left {
+            display: none;
+            
+            @media (min-width: $breakpoint-desktop) {
+            display: block;
+            }
+        }
+        &--right{
+            display: none;
+
+            @media (min-width: $breakpoint-desktop) {
+            display: block;
+            }
+        }
+    }
 
     &__header {
         position: relative;
