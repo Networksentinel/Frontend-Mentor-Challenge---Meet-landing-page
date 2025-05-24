@@ -33,10 +33,15 @@
         gap: $spacing-400;
     }
     &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $spacing-200;
 
         &--small{
         @include text-preset-3;
         color: $color-1;
+        text-transform: uppercase
         }
     
         &--big {
