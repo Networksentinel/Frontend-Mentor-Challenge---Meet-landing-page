@@ -26,13 +26,22 @@
         }
     }
 
-    &__heading--small{
-    @include text-preset-3;
-    color: $color-1;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $spacing-400;
     }
+    &__heading {
+
+        &--small{
+        @include text-preset-3;
+        color: $color-1;
+        }
     
-    &__heading--big {
-    @include text-preset-2;
-    color: $color-secondary;
+        &--big {
+        @include text-preset-2;
+        color: $color-secondary;
+        }
     }
 }
