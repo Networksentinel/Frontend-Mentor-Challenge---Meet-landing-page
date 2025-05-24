@@ -16,7 +16,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: $spacing-200;
 
-        width: clamp(260px, 82.9333vw, 415px);
         height: clamp(250px, 81.0666vw, 405px);
 
         & img {
