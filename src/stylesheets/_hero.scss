@@ -10,13 +10,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: clamp($spacing-600, 7.2916vw + 1rem, 88px);
+    gap: clamp($spacing-600, 7.2916vw + 1rem, 127px);
 
     @media (min-width: $breakpoint-tablet) {
         padding-bottom: $spacing-800
     }
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
+        gap: clamp(127.85px, 8.878472vw, 500px);
     }
 
     &__img {
