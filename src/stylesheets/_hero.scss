@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: $spacing-600;
+    gap: clamp($spacing-600, 7.2916vw + 1rem, 88px);
 
     &__header {
         position: relative;
