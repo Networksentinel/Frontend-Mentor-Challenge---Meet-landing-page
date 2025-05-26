@@ -13,7 +13,7 @@
     padding-bottom: clamp($spacing-800, 6.25vw + 1rem, $spacing-900);
 
     @media (min-width: $breakpoint-tablet) {
-        width: clamp(693px, 83.203125vw, 755px);
+        width: clamp(680px, 88.54165vw, 1120px);
     }
 
     &__grid {
@@ -22,6 +22,11 @@
         gap: $spacing-200;
 
         height: clamp(250px, 81.0666vw, 405px);
+
+        @media (min-width: $breakpoint-tablet) {
+            grid-template-columns: repeat(4, 1fr);
+            height: fit-content;
+    }
 
         & img {
             width: 100%;
