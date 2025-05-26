@@ -3,6 +3,10 @@
 
 .main-footer {
 
+    &__number-component {
+        margin-bottom: -28px;
+    }
+
     &__img {
     display: flex;
     flex-direction: column;
