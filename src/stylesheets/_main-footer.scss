@@ -2,6 +2,7 @@
 @use './number-component' as *;
 
 .main-footer {
+    width: 100%;
     color: $color-primary;
 
     &__number-component {
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: $spacing-300;
 
     padding: clamp($spacing-800, 8.3333vw, $spacing-1400) 
