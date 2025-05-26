@@ -1,6 +1,6 @@
 @use './design' as *;
 
-.number-component {
+.number-component{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,19 @@
         background-color: $color-add-2;
     }
     &__circle{
-        width: 55px;
-        height: 55px;
+        width: 56px;
+        height: 56px;
         background-color: $color-primary;
         border: 1px solid $color-add-2;
         border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            @include text-preset-5;
+            color: $color-add-1;
+        }
     }
 }
