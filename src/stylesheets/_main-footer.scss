@@ -19,9 +19,11 @@
 
     width: 100%;
     height: 374px;
-
-    background: url(/images/mobile/image-footer.jpg);
-    background-size: cover;
+    background-image:   
+                linear-gradient(transparentize(#4D96A9, 0.1), 
+                transparentize(#4D96A9, 0.1)), 
+                url('/images/mobile/image-footer.jpg');
+    background-size: cover
     }
     
     &__heading {
