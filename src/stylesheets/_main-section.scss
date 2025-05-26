@@ -19,13 +19,13 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: $spacing-200;
+        gap: clamp($spacing-200, 3.125vw, $spacing-400);
 
         height: clamp(250px, 81.0666vw, 405px);
 
         @media (min-width: $breakpoint-tablet) {
             grid-template-columns: repeat(4, 1fr);
-            height: fit-content;
+            height: clamp(160px, 20.8333vw, 256px);
     }
 
         & img {
