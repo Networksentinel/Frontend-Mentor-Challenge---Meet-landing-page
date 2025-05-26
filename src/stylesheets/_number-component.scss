@@ -1,2 +1,8 @@
 @use './design' as *;
 
+.number-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
