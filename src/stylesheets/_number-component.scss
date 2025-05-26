@@ -5,4 +5,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__line{
+        width: 1px;
+        height: 80px;
+        background-color: $color-add-2;
+    }
+    &__circle{
+        width: 55px;
+        height: 55px;
+        background-color: $color-primary;
+        border: 1px solid $color-add-2;
+        border-radius: 50%;
+    }
 }
