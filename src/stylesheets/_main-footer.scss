@@ -39,23 +39,32 @@
                 transparentize(#4D96A9, 0.1)), 
                 url('/images/tablet/image-footer.jpg');
         }
-        
+
         @media (min-width: $breakpoint-desktop) {
             flex-direction: row;
             text-align: left;
             height: 312px;
             gap: $spacing-400;
+            justify-content: center;
+            align-items: flex-start;
 
             background-image:   
                 linear-gradient(transparentize(#4D96A9, 0.1), 
                 transparentize(#4D96A9, 0.1)), 
                 url('/images/desktop/image-footer.jpg');
+
+            p {
+                width: 24.6527vw;
+            }
         }
     }
     
     &__heading {
     @include text-preset-2;
     color: $color-primary;
+        @media (min-width: $breakpoint-desktop) {
+            width: clamp(445px, 30.9027vw, 513px);
+        }
     }
 
     &__button {
@@ -63,6 +72,10 @@
 
         span {
             color: $color-2-light;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            margin-left: 64px;
         }
     }
 }
