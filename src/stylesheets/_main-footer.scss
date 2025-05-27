@@ -24,26 +24,32 @@
 
 
         background-image:   
-                    linear-gradient(transparentize(#4D96A9, 0.1), 
-                    transparentize(#4D96A9, 0.1)), 
-                    url('/images/mobile/image-footer.jpg');
+            linear-gradient(transparentize(#4D96A9, 0.1), 
+            transparentize(#4D96A9, 0.1)), 
+            url('/images/mobile/image-footer.jpg');
         background-size: cover;
 
         @media (min-width: $breakpoint-tablet) {
-                padding:    clamp($spacing-800, 8.3333vw, $spacing-1400) 
-                            clamp($spacing-1650, 17.1875vw, $spacing-2000);
-                height: 320px;
+            padding: clamp($spacing-800, 8.3333vw, $spacing-1400) 
+                     clamp($spacing-1650, 17.1875vw, $spacing-2000);
+            height: 320px;
 
-                background-image:   
-                    linear-gradient(transparentize(#4D96A9, 0.1), 
-                    transparentize(#4D96A9, 0.1)), 
-                    url('/images/tablet/image-footer.jpg');
+            background-image:   
+                linear-gradient(transparentize(#4D96A9, 0.1), 
+                transparentize(#4D96A9, 0.1)), 
+                url('/images/tablet/image-footer.jpg');
         }
-        @media (min-width: $breakpoint-tablet) {
-                background-image:   
-                    linear-gradient(transparentize(#4D96A9, 0.1), 
-                    transparentize(#4D96A9, 0.1)), 
-                    url('/images/desktop/image-footer.jpg');
+        
+        @media (min-width: $breakpoint-desktop) {
+            flex-direction: row;
+            text-align: left;
+            height: 312px;
+            gap: $spacing-400;
+
+            background-image:   
+                linear-gradient(transparentize(#4D96A9, 0.1), 
+                transparentize(#4D96A9, 0.1)), 
+                url('/images/desktop/image-footer.jpg');
         }
     }
     
