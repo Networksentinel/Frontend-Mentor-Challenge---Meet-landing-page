@@ -69,6 +69,7 @@
 
     &__button {
         background-color: $color-2;
+        transition: all 0.4s ease-in-out;
 
         span {
             color: $color-2-light;
@@ -76,6 +77,11 @@
 
         @media (min-width: $breakpoint-desktop) {
             margin-left: 64px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $color-2-hover;
         }
     }
 }
